@@ -6,9 +6,7 @@ export default function Button(props) {
   return (
     <div className="w-3/4 flex justify-center text-sm">
       <button
-        className={`h-10 p-2.5 rounded-xl 
-        border-none hover:bg-gray-600 text-white ${
-          // btnSelected('btn1' || 'btn2') === true ? condition
+        className={`h-10 p-2.5 rounded-xl border-none text-white transition duration-300 ease-in-out ${
           btnSelected ? "bg-gray-600" : ""
         }`}
         id={id}
