@@ -14,7 +14,7 @@ export default {
          
         'lg' : {'min': '1024px', 'max': "1280px"},
 
-        'xl' : {'min': '1280px', 'max': "1440px"}
+        'xl' : {'min': '1280px', 'max': "1843px"}
          
       },
       // Agrega estilos globales

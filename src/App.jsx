@@ -40,16 +40,30 @@ function App() {
       <div
         className="w-4/5 flex flex-col rounded-2xl items-center justify-center absolute"
         style={{
-          height: "60%",
+          height: "70%",
           marginTop: "220px",
           backgroundColor: "#1B1D1F",
+          ...(window.innerWidth >= 1280 &&
+            window.innerWidth <= 1843 && {
+              width: "90%",
+              height: "80%",
+            }),
+          ...(window.innerWidth >= 1024 &&
+            window.innerWidth <= 1280 && {
+              width: "90%",
+            }),
+          ...(window.innerWidth >= 640 &&
+            window.innerWidth <= 1024 && {
+              width: "80%",
+            }),
+          ...(window.innerWidth <= 640 && {
+            width: "80%",
+            height: "100vh",
+          }),
         }}
       >
         <Description />
-        <div
-          className=" w-5/12 flex justify-around"
-          
-        >
+        <div className="w-5/12 flex justify-around mt-8">
           <Button
             btnSelected={btnSelected === "btn1"}
             setBtnSelected={setBtnSelected}
