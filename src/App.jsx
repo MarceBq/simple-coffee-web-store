@@ -33,9 +33,9 @@ function App() {
     <div className="w-full h-full flex flex-col items-center relative">
       <img
         className="w-full"
-        style={{ height: "30%" }}
         src="./src/assets/bg-cafe.jpg"
         alt="#"
+        style={{ height: "30%" }}
       />
       <div
         className="w-4/5 flex flex-col rounded-2xl items-center justify-center absolute"
