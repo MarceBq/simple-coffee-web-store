@@ -34,7 +34,7 @@ function App() {
       <img
         className="w-full"
         src="./public/bg-cafe.jpg"
-        alt="#"
+        alt="background cooffe"
         style={{ height: "30%" }}
       />
       <div
