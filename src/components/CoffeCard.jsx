@@ -5,27 +5,31 @@ export default function CoffeCard({ data, btnSelected }) {
 
   return (
     <div
-      className="flex justify-start content-start gap-20 flex-wrap mt-10"
+      className="flex justify-start content-start flex-wrap mt-10"
       style={{
+        gap: "5rem",
         width: "75%",
         marginLeft: "85px",
         ...(window.innerWidth >= 1280 &&
           window.innerWidth <= 1843 && {
-            width: "100%",
-            marginLeft: "30px",
+            width: "90%",
+            marginLeft: "19%"
           }),
         ...(window.innerWidth >= 1024 &&
           window.innerWidth <= 1280 && {
             width: "90%",
+            marginLeft: "11%"
           }),
-        ...(window.innerWidth >= 640 &&
+        ...(window.innerWidth >= 816 &&
           window.innerWidth <= 1024 && {
             width: "80%",
+            marginLeft: "30px",
+            gap: "2rem",
           }),
-        ...(window.innerWidth <= 640 && {
+        ...(window.innerWidth < 816 && {
           width: "100%",
-          height: "100vh",
-          gap: "0",
+          height: "100%",
+          marginLeft: "30px",
         }),
       }}
     >
@@ -37,21 +41,21 @@ export default function CoffeCard({ data, btnSelected }) {
             margin: "15.50px",
             ...(window.innerWidth >= 1280 &&
               window.innerWidth <= 1843 && {
-                width: "20%",
+                width: "19%",
               }),
             ...(window.innerWidth >= 1024 &&
               window.innerWidth <= 1280 && {
                 margin: "20px",
                 width: "20%",
               }),
-            ...(window.innerWidth >= 640 &&
+            ...(window.innerWidth >= 816 &&
               window.innerWidth <= 1024 && {
-                margin: "40px",
-                width: "20%",
+                margin: "28px",
+                width: "35%",
               }),
-            ...(window.innerWidth <= 640 && {
+            ...(window.innerWidth <= 816 && {
               marginTop: "5px",
-              width: "50%",
+              width: "100%",
             }),
           }}
           key={index}
@@ -102,7 +106,7 @@ export default function CoffeCard({ data, btnSelected }) {
                       ({coffee.votes} votes)
                     </p>
                   </div>
-                  <div className="w-full">
+                  <div className="w-full flex justify-end">
                     {!coffee.available && (
                       <p style={{ color: "#ED735D" }}>Sold out</p>
                     )}

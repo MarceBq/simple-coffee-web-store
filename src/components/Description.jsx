@@ -8,9 +8,6 @@ export default function Description() {
         ...(window.innerWidth >= 1280 && window.innerWidth <= 1843 && {}),
       }}
     >
-      {/* <img className="" src="./src/assets/vector.svg" alt="#" style={{
-        
-      }}/> */}
       <div className=" ">
         <h1 className="text-4xl text-white">Our Collection</h1>
 

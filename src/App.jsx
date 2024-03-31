@@ -40,25 +40,30 @@ function App() {
       <div
         className="w-4/5 flex flex-col rounded-2xl items-center justify-center absolute"
         style={{
-          height: "70%",
+          
           marginTop: "220px",
+          marginRight: "130px",
           backgroundColor: "#1B1D1F",
           ...(window.innerWidth >= 1280 &&
             window.innerWidth <= 1843 && {
-              width: "90%",
+              marginRight: "10px",
+              width: "80%",
               height: "80%",
             }),
           ...(window.innerWidth >= 1024 &&
             window.innerWidth <= 1280 && {
+              marginRight: "10px",
               width: "90%",
             }),
-          ...(window.innerWidth >= 640 &&
+          ...(window.innerWidth > 816 &&
             window.innerWidth <= 1024 && {
+              marginRight: "10px",
+              height: "100%",
               width: "80%",
             }),
-          ...(window.innerWidth <= 640 && {
+          ...(window.innerWidth < 816 && {
             width: "80%",
-            height: "100vh",
+            marginRight: "5px",
           }),
         }}
       >
