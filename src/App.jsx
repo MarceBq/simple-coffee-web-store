@@ -33,7 +33,7 @@ function App() {
     <div className="w-full h-full flex flex-col items-center relative">
       <img
         className="w-full"
-        src="./src/assets/bg-cafe.jpg"
+        src="./public/bg-cafe.jpg"
         alt="#"
         style={{ height: "30%" }}
       />

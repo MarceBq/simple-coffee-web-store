@@ -96,7 +96,7 @@ export default function CoffeCard({ data, btnSelected }) {
                   style={{ width: "260px" }}
                 >
                   <div className="w-full flex flex-row items-center text-center">
-                    <img style={{width: "24px"}} src="./src/assets/Star_fill.svg" alt="#" />
+                    <img style={{width: "24px"}} src="./public/Star_fill.svg" alt="#" />
                     <p className="text-white ml-1.5 text-xs">{coffee.rating}</p>
                     <p className="ml-1.5 text-xs text-gray-400">
                       ({coffee.votes} votes)
@@ -113,7 +113,7 @@ export default function CoffeCard({ data, btnSelected }) {
                   className="w-full mt-1 flex flex-row items-center text-center"
                   style={{ width: "260px" }}
                 >
-                  <img style={{width: "24px"}} src="./src/assets/Star.svg" alt="#" />
+                  <img style={{width: "24px"}} src="./public/Star.svg" alt="#" />
                   <p className="ml-1.5 text-xs text-gray-400">No ratings</p>
                 </div>
               )}
