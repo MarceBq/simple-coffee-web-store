@@ -33,7 +33,7 @@ function App() {
     <div className="w-full h-full flex flex-col items-center relative">
       <img
         className="w-full"
-        src="./public/bg-cafe.jpg"
+        src="/bg-cafe.jpg"
         alt="background cooffe"
         style={{ height: "30%" }}
       />
